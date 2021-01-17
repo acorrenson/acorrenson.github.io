@@ -35,6 +35,28 @@
       font-weight: bold;
     }
 
+    .quote {
+      font-style: italic;
+      color: grey;
+    }
+
+
+    .quote::before {
+      content: "\"";
+    }
+
+    .quote::after {
+      content: "\"";
+    }
+
+    .quote_from {
+      color: grey;
+    }
+
+    .quote_from::before {
+      content: "-- ";
+    }
+
     h1 {
       border-bottom: 3px solid rgb(118, 68, 141);
       width: auto;
@@ -63,7 +85,13 @@
       padding: 5px;
       border-radius: 3px;
     }
+
+    footer {
+      margin-top: 10%;
+      border-top: 3px solid rgb(118, 68, 141);
+    }
   </style>
+
 </head>
 
 <body>
@@ -78,22 +106,42 @@
     <br><br>
 
     I'm a french student in Computer Science at <a href="http://www.ens-rennes.fr/">Ecole
-      Normale Superieure</a>. I'm fascinated by programming languages, formal proofs and solver design.
+      Normale Supérieure</a>.
 
-    I first studied both Math & CS at <a href="https://uni-tlse3.fr">Toulouse University</a> in a double bachelor.
-    Before my third year I got admitted to the ENS where I'm currently a happy student.
+    I first studied both Math & CS at <a href="https://uni-tlse3.fr">Toulouse III University</a> in a double bachelor.
+    Before my third year I got admitted to the ENS where I'm currently a student.
 
     <br><br>
 
-    I'm a happy user of <a href="https://ocaml.org">OCaml</a> and a great fan of strongly typed functional languages
+    I'm fascinated by programming languages theory, formal methods and solvers design and verification. I'm a happy user
+    of <a href="https://ocaml.org">OCaml</a> and a great fan of strongly typed functional languages
     in
-    general. The areas of computer science that interest me the most are formal methods, programming languages theory
-    and
-    solvers design and verification.
+    general.
   </p>
+
   <p id="CV">
     <a id="CV_DL" href="README.md" download>Download my CV</a>
   </p>
+
+  <h2>Contacts</h2>
+
+  <ul>
+    <li class="contact">GitHub : <a href="https://github.com/jdrprod">jdrprod</a></li>
+    <li class="contact">Mail : <a href="mailto:arthur.correnson@ens-rennes.fr">arthur.correnson@ens-rennes.fr</a></li>
+  </ul>
+
+  <h2>Projects</h2>
+
+  I've been working on many projects from various domains of Computer science. All of theme are freely distributed and
+  sources may be found on my <a href="https://github.com/jdrprod">github page</a>. My current big project is to develop
+  a Coq-certified SAT solver. My goal with this
+  project is to try to provide a safe solver with reasonable performances.
+
+  <h2>Student organisations</h2>
+
+  I'm one of the co-founders of <a href="https://codeanon.org">CodeAnon</a> student organisation. This organisation
+  aims at helping students developing their computer science projects. We also organize meetings, lectures and workshops
+  on various subjects related to research in computer science.
 
   <h2>Skills</h2>
 
@@ -109,17 +157,16 @@
     Latex, git, github, gitlab, UNIX systems, compilers
   </p>
 
-  <h2>Contacts</h2>
+  <footer>
+    <p>
+      <span class="quote"> Computer science is no more about computers than astronomy is about telescopes </span>
+      <span class="quote_from">Dijkstra</span>
+    </p>
 
-  <ul>
-    <li class="contact">GitHub</li>
-    <li class="contact">Mail</li>
-  </ul>
-
-
-  <h2>Projects</h2>
-
-  <h2>Student organisations</h2>
+    <p>
+      Thanks for reading !
+    </p>
+  </footer>
 
 </body>
 
