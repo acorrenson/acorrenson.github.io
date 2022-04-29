@@ -92,6 +92,15 @@
       margin-top: 10%;
       border-top: 3px solid rgb(118, 68, 141);
     }
+
+    img {
+      width: 20%;
+      height: auto;
+      float: left;
+      margin-right: 5%;
+      border-radius: 100%;
+      border: 3px solid rgb(118, 68, 141);
+    }
   </style>
 
 </head>
@@ -100,6 +109,8 @@
 
   <h1>Arthur Correnson</h1>
 
+  <img src="./me.png" alt="profile">
+
   <h2>About</h2>
 
   <p>
@@ -107,7 +118,7 @@
 
     <br><br>
 
-    I'm a student in Computer Science at <a href="http://www.ens-rennes.fr/">École
+    I'm a master's student in Computer Science at <a href="http://www.ens-rennes.fr/">École
       Normale Supérieure</a> de Rennes, France. I'm also an exchange student at Saarland University, Germany.
 
     Prior to that, I studied Mathematics & Computer Science as a double bachelor at <a
@@ -126,40 +137,69 @@
   <p>
     Computer Science is a very wide area of research and every single topic is interesting...
     However, programming languages theory and formal methods are my favorite topics.
-    More precisely, I'm interested in automated provers design and verification.
-    I am also a happy user of <a href="https://ocaml.org">OCaml</a> and <a href="https://coq.inria.fr/">Coq</a> and a
-    great fan of strongly typed functional
-    languages in general.
+    More precisely, I'm interested in very practical aspects of the design, implementation and verification of
+    verification tools themselves. So
+    far, I've been essentially working on verified compilers (<a href="https://compcert.org/">CompCert</a>) and verified
+    provers (<a href="https://colibri.frama-c.com/index.html">Colibri2</a>).
+
+    I am also an unconditional fanboy of <a href="https://ocaml.org">OCaml</a> (people call me <i>Mr. Caml</i>) and <a
+      href="https://coq.inria.fr/">Coq</a>
+    and a great fan of strongly typed functional languages in general.
   </p>
+
   <p>
     Teaching and transmitting has always been important for me. I believe that tools such as automated provers or
-    proof assistants could be used to teach mathematics and theoretical computer science in an easier way. However, such
+    proof assistants could be used to teach mathematics and theoretical computer science to a wider audience. However,
+    such
     tools are
-    often intended to be used by experts and are therefore hard to work with. There is still a lot of research to do to
-    make formal tools easier to use and I find it super exciting!
+    often intended to be used by experts and are therefore very hard to use from a student perspective.
+    I believe (and I hope I'm not completely wrong) that studying practical aspects of the implementation of such
+    systems is a
+    good way to bring them to more people. Providing simple and formally proven implementations of formal verification
+    tools is an amazing way to better understand how and why they actually work!
   </p>
 
-  <h2>Contacts</h2>
+  <h2>Publications</h2>
 
-  <ul>
-    <li class="contact">GitHub: <a href="https://github.com/jdrprod">jdrprod</a></li>
-    <li class="contact">Email: <a href="mailto:arthur.correnson@ens-rennes.fr">arthur.correnson@ens-rennes.fr</a></li>
-  </ul>
+  <ol>
+    <li>Arthur Correnson, François Bobot. Un Coq apprend à un bébé Colibri à flotter. <i>33èmes Journées Francophones
+        des
+        Langages Applicatifs</i>, Jun 2022, Saint-Médard-d'Excideuil, France. <br>[<a
+        href="https://hal.inria.fr/hal-03626792/document">pdf</a>]
+      [<a href="https://hal.inria.fr/hal-03626792/">hal</a>]
+    </li>
+  </ol>
 
   <h2>Projects</h2>
 
   I've been working on many projects from various domains of Computer science. All of theme are freely distributed and
-  sources are on my <a href="https://github.com/jdrprod">github page</a>. At the moment I'm mainly focused on
-  the formal proof of solvers & tools for automated reasoning. Below are some of the projects I'm currently working on.
+  sources are on my <a href="https://github.com/jdrprod">github page</a>. Below are some of the projects that I think I
+  worth highlighting.
+
+  <h3>Professional and academic projects</h3>
+
+  <ul>
+    <li>Coq programming for the CompCert compiler at <a href="https://www.absint.com/index.htm">AbsInt</a> (In progress)
+    </li>
+    <li>Prototyping of a fully-verified software model-checker in Coq (In progress)</li>
+    <li>Formal verification of floating points constraint propagators in Coq. <br>Supervised by <a href="">François
+        Bobot</a> at CEA (Past project)</li>
+  </ul>
+
+  <h3>Personal projects</h3>
 
   <ul>
     <li><a href="https://github.com/jdrprod/SATurne">SATurne</a> is an experiment around the formal verification of a
       purely
       functional SAT solver written in Coq</li>
-    <li><a href="https://jdrprod.github.io/modulus/">Modulus</a>: an SMT solver built from scratch in OCaml by students
+    <li><a href="https://jdrprod.github.io/modulus/">Modulus</a>: a modular constraint solver built from scratch in
+      OCaml
     </li>
-    <li><a href="https://github.com/jdrprod/cqfd">CQFD</a>: A simple automated prover certified in Why3</li>
+    <!-- <li><a href="https://github.com/jdrprod/cqfd">CQFD</a>: A simple automated prover certified in Why3</li> -->
   </ul>
+
+
+
 
   <h2>Student organizations</h2>
 
@@ -168,19 +208,12 @@
   workshops
   on various subjects related to research in computer science.
 
-  <h2>Skills</h2>
+  <h2>Contacts</h2>
 
-  <h3>Programming</h3>
-
-  <p>
-    OCaml, Coq, Rust, C/C++, Java, JavaScript, Python, x86, ARM
-  </p>
-
-  <h3>Tools</h3>
-
-  <p>
-    Latex, git, github, gitlab, UNIX systems, compilers
-  </p>
+  <ul>
+    <li class="contact">GitHub: <a href="https://github.com/jdrprod">jdrprod</a></li>
+    <li class="contact">Email: <a href="mailto:arthur.correnson@ens-rennes.fr">arthur.correnson@ens-rennes.fr</a></li>
+  </ul>
 
   <footer>
     <p>
