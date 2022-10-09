@@ -41,17 +41,16 @@ a {
 }
 
 img {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   width: 10%;
+  height: auto;
+  border: 1px solid #777;
+  padding: 5px;
 }
 
 em {
   font-weight: bold;
 }
-
-/* .type_publi {
-  border-bottom: 1px solid black;
-} */
 
 .paper {
   margin: 10px;
@@ -95,4 +94,23 @@ em {
 
 footer {
   margin: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 80%;
+  }
+
+  .contact img {
+    display: none;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .contact ul {
+    list-style: none;
+    padding: 0;
+  }
 }
