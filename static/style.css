@@ -42,7 +42,7 @@ a {
 
 img {
   /* border-radius: 50%; */
-  width: 10%;
+  width: 20%;
   height: auto;
   border: 1px solid #777;
   padding: 5px;
@@ -55,7 +55,7 @@ em {
 .paper {
   margin: 10px;
   padding: 10px;
-  border-left: 3px solid #333;
+  border: 1px solid #333;
 }
 
 .paper_title {
@@ -94,6 +94,24 @@ em {
 
 footer {
   margin: 10px;
+}
+
+.news_item {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.news_date {
+  width: 20%;
+}
+
+.news_date::before {
+  content: "[";
+}
+
+.news_date::after {
+  content: "]";
 }
 
 @media only screen and (max-width: 900px) {
