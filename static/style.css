@@ -148,11 +148,15 @@ footer {
 
 @media only screen and (max-width: 900px) {
   .container {
-    width: 80%;
+    width: 95%;
   }
 
-  .contact img {
-    display: none;
+  #intro {
+    flex-direction: column;
+  }
+
+  #bio {
+    width: 100%;
   }
 
   .contact {
