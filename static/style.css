@@ -1,5 +1,10 @@
+/*
+ *   Copyright (c) 2024 
+ *   All rights reserved.
+ */
 body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: --apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   margin: 0;
   font-size: 1.1em;
 }
