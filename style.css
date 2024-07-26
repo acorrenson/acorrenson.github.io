@@ -1,0 +1,175 @@
+/*
+ *   Copyright (c) 2024 
+ *   All rights reserved.
+ */
+body {
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: --apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+a {
+  color: #333;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.container {
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-weight: bold;
+}
+
+.header nav a {
+  text-decoration: none;
+  margin-right: 3%;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+#image {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#image img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #777;
+}
+
+#intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bio {
+  text-align: justify;
+}
+
+#intro ul {
+  list-style: none;
+}
+
+#intro ul li {
+  margin: 0;
+}
+
+li {
+  margin: 10px;
+}
+
+#bio {
+  margin: 0;
+  /* border: 1px solid red; */
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  /* padding: 20px; */
+  /* justify-content: center; */
+}
+
+em {
+  font-weight: bold;
+}
+
+.paper {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+.paper_title {
+  width: 100%;
+  margin: 0;
+  color: #333;
+}
+
+.paper_widget {
+  margin-right: 10px;
+  color: #333;
+}
+
+.paper_widget {
+  margin-right: 10px;
+}
+
+.paper_location {
+  color: #777;
+}
+
+.paper_widget::before {
+  content: "[ ";
+  color: black;
+}
+
+.paper_widget::after {
+  content: " ]";
+  color: black;
+}
+
+.paper_award {
+  font-weight: bolder;
+  color: orange;
+}
+
+footer {
+  margin: 10px;
+}
+
+.news_item {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.news_date {
+  width: 20%;
+}
+
+.news_date::before {
+  content: "[";
+}
+
+.news_date::after {
+  content: "]";
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 95%;
+  }
+
+  #intro {
+    flex-direction: column;
+  }
+
+  #bio {
+    width: 100%;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .contact ul {
+    list-style: none;
+    padding: 0;
+  }
+}
